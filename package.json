@@ -12,7 +12,9 @@
   "dependencies": {
     "axios": "^0.19.2",
     "better-scroll": "^1.15.2",
+    "cnpm": "^6.1.1",
     "fastclick": "^1.0.6",
+    "install": "^0.13.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
