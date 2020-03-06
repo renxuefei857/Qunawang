@@ -4,7 +4,7 @@ import Router from 'vue-router';
 import Home from '../pages/home/Home';
 import City from '../pages/city/city';
 
-import xqy from "../pages/home/components/xqy"
+import xqy from "../pages/detail/xqy"
 Vue.use(Router);
 
 export default new Router({
@@ -20,7 +20,7 @@ export default new Router({
       component: City
     },
     {
-      path: '/xqy',
+      path: '/xqy/:id',
       name: 'xqy',
       component: xqy
     }

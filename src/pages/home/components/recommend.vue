@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <div class="mp-group-title image-ready">
@@ -35,7 +36,10 @@
         </p>
       </div>
 
-		<dl class="item border-bottom" v-for="item in re" :key="item.id" @click="enterthe(item)">               
+	<router-link :to="'/xqy/'+item.id"  v-for="item in re" :key="item.id" tag="dl" >
+  
+
+  	<dl class="item border-bottom"  >     <!--@click="enterthe(item)" -->            
 <dt>
           <img :src="item.imgUrl" alt />
         </dt>
@@ -59,6 +63,7 @@
           </div>
         </dd>             
 </dl>
+  </router-link>
 
 
   
@@ -75,9 +80,9 @@ export default {
       }
     },
       methods:{
-    enterthe(item){
-       this.$router.push({path:"/xqy", query:{item:item}}) 
-    }
+    // enterthe(item){
+    //    this.$router.push({path:"/xqy", query:{item:item}}) 
+    // }
   },
 
 }
