@@ -4,7 +4,9 @@ import Router from 'vue-router';
 import Home from '../pages/home/Home';
 import City from '../pages/city/city';
 
-import xqy from "../pages/detail/xqy"
+import xqy from "../pages/detail/xqy";
+
+// import FadeAn from "../common/fade/FadeAn"
 Vue.use(Router);
 
 export default new Router({
@@ -19,6 +21,11 @@ export default new Router({
       name: 'City',
       component: City
     },
+    // {
+    //   path: '/FadeAn',
+    //   name: 'FadeAn',
+    //   component: FadeAn
+    // },
     {
       path: '/xqy/:id',
       name: 'xqy',
