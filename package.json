@@ -2,10 +2,10 @@
   "name": "qunaer",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "cuixin1998 <1756145245@qq.com>",
+  "author": "renxuefei <724458421@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

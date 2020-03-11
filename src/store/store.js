@@ -1,5 +1,7 @@
 
 //本地存储
+
+
 let defaultCity = "邓州"
 try {
 
@@ -13,5 +15,7 @@ try {
 
 
 export default{
-    city:defaultCity
+    city:defaultCity,
+    hot:localStorage.hot||"",
+    top:0,
 }
